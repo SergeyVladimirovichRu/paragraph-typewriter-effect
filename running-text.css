@@ -1,0 +1,49 @@
+/* running-text.css */
+.ptw-container {
+    font-family: monospace;
+    font-size: 20px;
+    line-height: 1.6;
+    min-height: 200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.ptw-animation {
+    white-space: pre-line;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.ptw-container p,
+.ptw-animation p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+.ptw-container br,
+.ptw-animation br {
+    display: block;
+    content: "";
+    margin-bottom: 1em;
+}
+
+@keyframes ptw-blink {
+    50% { opacity: 0; }
+}
+
+.ptw-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+    vertical-align: middle;
+    animation: ptw-blink 0.7s infinite;
+    margin-left: 2px;
+}
